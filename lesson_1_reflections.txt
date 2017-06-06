@@ -1,6 +1,6 @@
 I learned 4 commands:
 
-	git log
+	git log  
 	git diff
 	git clone
 	git checkout

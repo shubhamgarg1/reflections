@@ -1,8 +1,14 @@
 Learned Commands:
 
+
+
+
 	git diff  				 : working directory and staging area
 	git diff --staged 		 : staging area and repository
 	git diff commit2 commit1 : Difference between two commits of repository.
+
+	git show commit1 : Changes introduced by the commit from its parent (Dont need git diff when you only need to see the changes introduced immediately
+	by the commit)
 
 	git add : Adds the changes done to the staging area from the working directory
 	eg git add game.js
@@ -12,10 +18,28 @@ Learned Commands:
 	git commit : Add the changes from staging area to repository 
 	eg git commit -m "Add color"
 
+	Esc then write :wq to save and exit from vim
+
 	git branch : See the branches and the selected branch
 	git branch easy-mode : Creates a easy-mode branch 
+	git branch -d coins : Deletes the label of the branch ( First merge a branch then only delete its label )
 
 	git checkout easy-mode : Makes the present branch as easy-mode, By default current branch is master
+
+	git checkout commitx : Takes head to some commit
+	Now you can create a branch at this point using   git checkout -b new_branch_name
+	which is like two commands: git branch new_branch_name and git checkout new_branch_name
+
+	git log --oneline is useful
+	git log -n 1 ( for displaying only one commit)
+	git log displays log messages using parent of a commit and going backwards.
+	If merged node is there then git log displays sorted commits by timestamp.
+	i.e 1----2---3---4--5---6---merged
+					 |			|
+					 |			|
+					 9--10--11--12
+
+		Now if 6 is newer than 12, 6 will appear first in the log message
 
 
 
@@ -45,10 +69,26 @@ organized? How would branches help?
 	When you want to create a different version of a game (Not only an update)
 	Try out new different features but want a working version always available ( You could also checkoutto the working commit )
 
+	You could assume master as the production branch whereas other branches as development branches where new developments (Experimental or unique features) are taking place
+
+	Not only, when you are collaborating with othes , it is useful. It is also useful when you are collaborating with yourself
+
 How do the diagrams help you visualize the branch structure?
+
+	use git log --graph --oneline master coins 
+	It gives you a visualization of all the commits performed and help you understand why some feature might not be present at some place.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	The features of both the branches are combined in that merged node
+	First go to branch master ( i.e git checkout master) and then merge coins with it ( i.e git merge master coins )
+
+	The diagram is used for a much better understanding
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+
+	Automatic merging useful when two independent features are involved 
+	If same code is modified ( same area/lines ) then manual is better
