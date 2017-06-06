@@ -1,3 +1,24 @@
+Learned Commands:
+
+	git diff  				 : working directory and staging area
+	git diff --staged 		 : staging area and repository
+	git diff commit2 commit1 : Difference between two commits of repository.
+
+	git add : Adds the changes done to the staging area from the working directory
+	eg git add game.js
+
+	git reset --hard : Eliminate the changes in the working repository and make the file go to the last commit version
+
+	git commit : Add the changes from staging area to repository 
+	eg git commit -m "Add color"
+
+	git branch : See the branches and the selected branch
+	git branch easy-mode : Creates a easy-mode branch 
+
+	git checkout easy-mode : Makes the present branch as easy-mode, By default current branch is master
+
+
+
 What happens when you initialize a repository? Why do you need to do it?
 
 	git init is used
@@ -14,9 +35,15 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	 
+	 By using git add for only one file and then commit. Now only one file is commited.
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+
+	When you want to create a different version of a game (Not only an update)
+	Try out new different features but want a working version always available ( You could also checkoutto the working commit )
 
 How do the diagrams help you visualize the branch structure?
 
