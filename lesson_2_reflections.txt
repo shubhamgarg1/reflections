@@ -1,6 +1,6 @@
 Learned Commands:
 
-
+	git init 	: Initialize a git repository
 
 
 	git diff  				 : working directory and staging area
@@ -31,6 +31,7 @@ Learned Commands:
 	which is like two commands: git branch new_branch_name and git checkout new_branch_name
 
 	git log --oneline is useful
+	git log --graph --oneline master coins ( For a graph )
 	git log -n 1 ( for displaying only one commit)
 	git log displays log messages using parent of a commit and going backwards.
 	If merged node is there then git log displays sorted commits by timestamp.
