@@ -13,16 +13,22 @@ use one instead of another?
 
     Fork is just like a clone that github makes on their own machine.
     If we had done clone and push to copy the repository in our github then the original creater would not have gotten any recognition for his work.
+    When we clone a repository git automatically sets up a remote pointing to the repository you cloned from.
+
+    Clone is just copying a repository from some place to your local machine.
+
+    Branch is entirely different from this. It means to create a different commit path that we may later merge.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    So that the changes you make are to the latest version which is expected to result in less conflicts later on.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Using copying pasting , mails
+    Github is definitely better
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
