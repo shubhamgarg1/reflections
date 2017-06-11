@@ -1,3 +1,27 @@
+Commands Learned:
+
+
+    git remote
+
+    git remote add origin url
+ 
+    remotes: These are repositories other than the one on your local disk which you can push your changes into 
+    (so that other people can see them) or pull from (so that you can get others changes). 
+    The command git remote add origin url creates a new remote called origin 
+    located at url.
+    Once you do this, in your push commands, you can push to origin instead of typing out the whole URL.
+
+    git push origin master(The branch we are pushing)
+
+    git pull origin master
+
+    push the commits in the local branch named master to the remote named origin". Once this is executed, all the stuff that you last synchronised with origin will be sent to the remote repository and other people will be able to see them there.
+
+
+
+
+
+
 When would you want to use a remote repository rather than keeping all your work
 local?
 
@@ -33,4 +57,6 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When collaborating, or showing wht you want to do and then make a pull reuest asking it to be merged with the master.
+
+    You just saw that the workflow when making changes in a separate branch is more complicated than working directly in master, especially when you need to stay up-to-date with changes others are making. Rather than simply pulling and pushing, you need to pull changes into your local master branch, merge the local master into your branch (different-oil, in our case), then push your branch to the remote before finally merging your branch into master, either locally or on GitHub.
