@@ -13,9 +13,14 @@ Commands Learned:
 
     git push origin master(The branch we are pushing)
 
+    You can also use:
+
+        git push url master
+        e.g. git push https://github.com/shubhamgarg1/reflections master
+
     git pull origin master
 
-    push the commits in the local branch named master to the remote named origin". Once this is executed, all the stuff that you last synchronised with origin will be sent to the remote repository and other people will be able to see them there.
+    push the commits in the local branch named master to the remote named origin. Once this is executed, all the stuff that you last synchronised with origin will be sent to the remote repository and other people will be able to see them there.
 
 
 
